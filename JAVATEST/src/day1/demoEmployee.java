@@ -5,13 +5,14 @@ public class demoEmployee {
 	public static void main(String[] args) {
 		Employee munish;
 		munish=new Employee();
-munish.sal=7000;
-munish.bonus=700;
-munish.calculateSalary();
-int sal=munish.calculateSalary1();
-System.out.println(+sal);
-int sal1=munish.calculateSalary2(6500,500);
-System.out.println(+sal1);
+munish.sal=200;
+munish.bonus=20;
+		munish.calculateSalary();
+		Employee Parul;
+		Parul=new Employee(553,3);
+		Parul.calculateSalary();
+
+
 	}
 
 }
