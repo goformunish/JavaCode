@@ -9,6 +9,7 @@ public class demoEmployee {
 		munish=new Employee(); 
 munish.setsal(200);
 munish.setBonus(20);
+
 		System.out.println(munish.calculateSalary());
 	
 		System.out.println(munish.getSal());
