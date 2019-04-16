@@ -15,16 +15,8 @@ public class Arrayl {
 		names.add("Munish");
 		names.add("Kumar");
 		names.add("Sharma");
-		ArrayList alint=new ArrayList();
-		alint.add(3);
-		alint.add(5);
-		alint.add(9);
-		java.util.Iterator it1=alint.iterator();
-		while (it1.hasNext())
-		{
-			System.out.println(it1.next());
-		}
-al.set(2,"Kumaran");
+		
+names.set(2,"Kumaran");
 		for (int i=0;i<al.size();i++)
 		{
 //System.out.println(al.get(i));
@@ -42,19 +34,24 @@ System.out.println(i);
 		ArrayList namecopy=new ArrayList();
 		ArrayList namebackup=new ArrayList();
 		namecopy.addAll(names);
+		namecopy.add("Ji");
 		for (int i=0;i<namecopy.size();i++)
 		{
 		System.out.println(namecopy.get(i));
 		}
-		namecopy.add("Munish");
-		if (namecopy.contains("Munish"))
+		if (namecopy.containsAll(names))
 		{
-			System.out.println("Munish indeed exists in the Array");
+			System.out.println("Both are same");
 		}
-		if (names.containsAll(namecopy))
+		else
 		{
-			System.out.println("Name and Namecopy array are same");
+			System.out.println("They are not same");
 		}
+			names.clear();
+			if (names.isEmpty())
+{
+	System.out.println("There is nothing present in the name");
+}
 	}
 
 }
