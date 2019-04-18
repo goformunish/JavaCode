@@ -13,7 +13,8 @@ public class DemoTreeset {
 		ts.add("Sharma");
 		ts.add("Kapil");
 		ts.add("Apple");
-		System.out.println(ts);
+		System.out.println("First element is "+ts.first());
+		System.out.println("Last element is "+ts.last());
 java.util.Iterator<String> it=ts.iterator();
 		while (it.hasNext())
 		{
